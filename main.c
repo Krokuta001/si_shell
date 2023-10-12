@@ -1,12 +1,11 @@
 #include "shell.h"
-
 /**
- * main - entry point
- * @ac: arg count
- * @av: arg vector
- *
- * Return: 0 on success, 1 on error
- */
+* main - starting point
+* @ac: arg count
+* @av: arg vector
+*
+* Return: if successful 0, if it fails 1
+*/
 int main(int ac, char **av)
 {
 	info_t info[] = { INFO_INIT };

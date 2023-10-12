@@ -1,12 +1,11 @@
 #include "shell.h"
-
 /**
- * _strcpy - copies a string
- * @dest: the destination
- * @src: the source
- *
- * Return: pointer to destination
- */
+* _strcpy - copies string
+* @dest: destination
+* @src: source
+*
+* Return: points at the destination
+*/
 char *_strcpy(char *dest, char *src)
 {
 	int i = 0;
@@ -21,13 +20,12 @@ char *_strcpy(char *dest, char *src)
 	dest[i] = 0;
 	return (dest);
 }
-
 /**
- * _strdup - duplicates a string
- * @str: the string to duplicate
- *
- * Return: pointer to the duplicated string
- */
+* _strdup - duplicates string
+* @str: string to be duplicated
+*
+* Return: points at duplicated string
+*/
 char *_strdup(const char *str)
 {
 	int length = 0;
@@ -44,13 +42,12 @@ char *_strdup(const char *str)
 		ret[length] = *--str;
 	return (ret);
 }
-
 /**
- * _puts - prints an input string
- * @str: the string to be printed
- *
- * Return: Nothing
- */
+* _puts - prints  input string
+* @str: the string to be printed
+*
+* Return: Nothing
+*/
 void _puts(char *str)
 {
 	int i = 0;
@@ -63,14 +60,13 @@ void _puts(char *str)
 		i++;
 	}
 }
-
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
+* _putchar - writes character c to stdout
+* @c: character to be printed
+*
+* Return: 1 if successful
+* if error -1 and errno is apropriately placed
+*/
 int _putchar(char c)
 {
 	static int i;
