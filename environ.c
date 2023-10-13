@@ -14,12 +14,11 @@ int _myenv(info_t *info)
 }
 
 /**
- * _getenv - Retrieve the value of an environment variable.
+ * _getenv - Access the value of an environment variable.
+ * @info: A structure that may contain relevant arguments.
+ * @name: The name of the target environment variable.
  *
- * @info: Structure that may contain necessary arguments.
- * @name: The name of the environment variable to retrieve.
- *
- * Return: The value of the environment variable.
+ * Return: The value associated with the specified environment variable.
  */
 char *_getenv(info_t *info, const char *name)
 {
@@ -37,8 +36,8 @@ char *_getenv(info_t *info, const char *name)
 }
 
 /**
- * _mysetenv - To initialize a new environment variable or modify an existing one.
- * @info: Structure that may contain necessary arguments.
+ * _mysetenv - Initialize a new environment variable or modify an existing one.
+ * @info: A structure that may contain relevant arguments.
  *
  * Return: Always returns 0.
  */
@@ -55,8 +54,8 @@ int _mysetenv(info_t *info)
 }
 
 /**
- * _myunsetenv - Delete an environment variable.
- * @info: Structure that may contain necessary arguments.
+ * _myunsetenv - Remove an environment variable.
+ * @info: A structure that may contain relevant arguments.
  *
  * Return: Always returns 0.
  */
@@ -76,8 +75,8 @@ int _myunsetenv(info_t *info)
 }
 
 /**
- * populate_env_list - Fill the environment linked list.
- * @info: Structure that may contain necessary arguments.
+ * populate_env_list - Populate the environment linked list.
+ * @info: A structure that may contain relevant arguments.
  *
  * Return: Always returns 0.
  */
