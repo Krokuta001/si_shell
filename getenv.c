@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * get_environ - returns the string array copy of our environ
- * @info: Structure containing potential arguments. Used to maintain
- *          constant function prototype.
- * Return: Always 0
+ * get_environ - Retrieve a copy of the string array containing the environment variables.
+ * @info: Structure that may contain necessary arguments.
+ *
+ * Return: Always returns 0.
  */
 char **get_environ(info_t *info)
 {
@@ -18,11 +18,12 @@ char **get_environ(info_t *info)
 }
 
 /**
- * _unsetenv - Remove an environment variable
- * @info: Structure containing potential arguments. Used to maintain
- *        constant function prototype.
- *  Return: 1 on delete, 0 otherwise
- * @var: the string env var property
+ * _unsetenv - Remove an environment variable.
+ * @info: Structure that may contain necessary arguments, used to maintain
+ *        a consistent function prototype.
+ * @var: The string representing the environment variable to remove.
+ *
+ * Return: 1 if the variable is successfully removed, 0 otherwise.
  */
 int _unsetenv(info_t *info, char *var)
 {
@@ -50,13 +51,13 @@ int _unsetenv(info_t *info, char *var)
 }
 
 /**
- * _setenv - Initialize a new environment variable,
- *             or modify an existing one
- * @info: Structure containing potential arguments. Used to maintain
+ * _setenv - Initialize a new environment variable or modify an existing one.
+ * @info: Structure containing potential arguments, used to maintain a
  *        constant function prototype.
- * @var: the string env var property
- * @value: the string env var value
- *  Return: Always 0
+ * @var: The string representing the environment variable property.
+ * @value: The string representing the environment variable value.
+ *
+ * Return: Always 0.
  */
 int _setenv(info_t *info, char *var, char *value)
 {
